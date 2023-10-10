@@ -71,6 +71,9 @@ body {
     margin-right: auto;
 }
 
+.section li{
+    margin-left: 20px;
+}
 
 .section h2 {
     padding-left: 20px;
@@ -113,12 +116,74 @@ a:hover {
     object-fit: cover; /* Ensure the image covers the entire circle */
 }
 
-.contact-info {
-    margin-bottom: 20px;
+
+.section .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.contact-info p {
-    margin: 5px 0;
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-image img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    width: 300px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    border-radius: 30%; /* Make the image a circle */
+    object-fit: cover; /* Ensure the image covers the entire circle */ 
+}
+
+.address {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .section.contact-info {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 800px;
+    }
+
+    .contact-image {
+        flex: 1;
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+table td{
+    margin-left: 20px;
+    padding: 30px;
+}
+
+.about-me p{
+    padding-left: 50px;
+    padding-right:50px;
+    text-align: justify;
 }
 
 .education {
